@@ -12,15 +12,32 @@
   </head>
 
   <body>
-    <div class="card-shipunov radius standard-border absolute-center">
-      <div class="info">
-        <div class="text-black text-center h1">Click counter</div>
-        <div class="m-t">
-          <span class="info-key">click:</span><span id="click-value" class="text-accent">0</span>
+    <div class="bg-tertiary row section">
+      <div class="card-shipunov radius standard-border shadow absolute-center">
+        <div class="info">
+          <div class="text-black text-center h1">Clicks</div>
+          <div class="m-t">
+            <span class="info-key">max value:</span
+            ><span id="click-max" class="text-accent m-l-s">0</span>
+          </div>
+          <div class="m-t">
+            <span class="info-key">click:</span
+            ><span id="click-value" class="text-accent m-l-s">0</span>
+          </div>
+          <div class="m-t">
+            <span class="info-key ">clicks left:</span
+            ><span id="click-value" class="text-accent m-l-s">0</span>
+          </div>
+          <div class="m-t">
+            <span class="info-key">step:</span
+            ><span id="click-value" class="text-accent m-l-s">0</span>
+          </div>
         </div>
+        <button id="click-btn" class="btn-primary shadow radius m-t">Click</button>
+        <button id="click-reset" class="btn-primary shadow radius m-t">Reset</button>
+        <button id="click-increase" class="btn-primary shadow radius m-t">Inc Step</button>
+        <button id="clickMax" class="btn-primary shadow radius m-t">Inc Max</button>
       </div>
-      <button id="click-btn" class="btn-primary radius m-t">Click</button>
-      <button id="click-reset" class="btn-primary radius m-t">Reset</button>
     </div>
   </body>
 </html>
