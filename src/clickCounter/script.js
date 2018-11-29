@@ -3,6 +3,7 @@ const clickValue = document.getElementById('click-value')
 const clickReset = document.getElementById('click-reset')
 const clickIncrease = document.getElementById('click-increase')
 const clickMax = document.getElementById('clickMax')
+const clickLeft = document.getElementById('click-left')
 
 let clicks = 0
 let step = 1
@@ -11,6 +12,7 @@ const maxValue = 20
 clickBtn.onclick = function() {
 	if (clicks < maxValue) {
 		clicks = clicks + step
+		clickLeft.innerHTML = maxValue - clicks
 	} else {
 		clicks = 'max value reached'
 	}
@@ -39,4 +41,5 @@ clickMax.onclick = function() {
 clickReset.onclick = function() {
 	clicks = 0
 	clickValue.innerHTML = clicks
+	clickLeft.innerHTML = clicks
 }
